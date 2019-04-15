@@ -1,9 +1,5 @@
 public class Square extends Shapes {
 
-    public Shapes createShape() {
-        return null;
-    }
-
     public void move(int dX, int dY) {
 
     }
