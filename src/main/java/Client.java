@@ -1,14 +1,22 @@
+import java.util.*;
+
 public class Client {
-    public Client(){
-        prodA = new ProductA();
+    private List<Product> products = new ArrayList<Product>();
+    private ProductA productA;
+
+    public Client() {
+        productA = new ProductA();
     }
-    public void foo(){
-        prodA.doyourstuff();
-        ProductB myProdB = new ProductB();
-        myProdB.doIt();
-        ProductC myProdC = new ProductC();
-        myProdC.perform();
+    public void foo() {
+        productA.doyourstuff();
+        ProductB productB = new ProductB();
+        productB.doIt() ;
+        ProductC productC = new ProductC();
+        productC.perform();
     }
-    ProductA prodA;
-    ProductB prodB;
+
+
+    public void add(Product product){
+        products.add(product);
+    }
 }
