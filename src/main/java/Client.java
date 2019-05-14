@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Client {
-    private List<Product> products = new ArrayList<Product>();
+    private List<ProductClass> products = new ArrayList<ProductClass>();
     private ProductA productA;
 
     public Client() {
@@ -16,7 +16,7 @@ public class Client {
     }
 
 
-    public void add(Product product){
+    public void add(ProductClass product){
         products.add(product);
     }
 }
