@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ProductA implements Product {
+public class ProductA extends ProductClass {
     static {
         Factory.registerProduct("ProductA", new ProductA());
     }

@@ -1,4 +1,4 @@
-public class ProductC implements Product{
+public class ProductC extends ProductClass{
     static {
         Factory.registerProduct("ProductC", new ProductC());
     }
