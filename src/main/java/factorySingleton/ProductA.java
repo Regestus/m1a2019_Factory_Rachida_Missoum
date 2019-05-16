@@ -1,15 +1,17 @@
+package factorySingleton;
+
 import java.util.*;
 
 public class ProductA extends ProductClass {
     static {
-        Factory.registerProduct("ProductA", new ProductA());
+        Factory.registerProduct("factorySingleton.ProductA", new ProductA());
     }
     @Override
     public Product createProduct() {
         return new ProductA();
     }
     public void doyourstuff(){
-        System.out.println(" I am a ProductA, doing my stuff");
+        System.out.println(" I am a factorySingleton.ProductA, doing my stuff");
     }
 
 }

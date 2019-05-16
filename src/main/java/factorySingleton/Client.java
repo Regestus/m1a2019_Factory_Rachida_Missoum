@@ -1,3 +1,5 @@
+package factorySingleton;
+
 import java.util.*;
 
 public class Client {

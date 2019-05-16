@@ -1,6 +1,8 @@
+package factorySingleton;
+
 public class ProductB extends ProductClass{
     static {
-        Factory.registerProduct("ProductB", new ProductB());
+        Factory.registerProduct("factorySingleton.ProductB", new ProductB());
     }
     @Override
     public Product createProduct() {
